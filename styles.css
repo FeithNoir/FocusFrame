@@ -1,0 +1,84 @@
+/* Estilos generales */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.column,
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4285f4;
+}
+
+.image-container {
+  width: 30rem;
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: object-position 0.5s ease-in-out;
+}
+
+#character-image.full {
+  width: 50%;
+}
+
+#character-image.medium {
+  width: 150%;
+}
+
+#character-image.close {
+  width: 200%;
+}
+
+.options {
+  gap: 2rem;
+}
+
+label {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}

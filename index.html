@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector de Enfoque</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="column">
+    <div class="container column">
+      <h1>Selector de Enfoque</h1>
+      <div class="image-container column">
+        <img id="character-image" class="full" src="personaje.png" alt="Personaje" />
+      </div>
+      <div class="options row">
+        <label class="row">
+          <input type="radio" name="focus" value="full" checked /> Cuerpo
+          Completo
+        </label>
+        <label class="row">
+          <input type="radio" name="focus" value="medium" /> Medio Cuerpo
+        </label>
+        <label class="row">
+          <input type="radio" name="focus" value="close" /> Primer Plano
+        </label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
